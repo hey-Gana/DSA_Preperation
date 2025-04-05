@@ -1,7 +1,7 @@
 # LeetCode prep notes
 
-## Arrays
-* to compare max of 2 numbers: a = max(1,10) {Built in function in Python}
+## Arrays[List]
+* to compare max of 2 numbers: a = max(1,10) {Built-in function in Python}
 
 ## String
 * ASCII Values for:
@@ -14,6 +14,7 @@
   * s.alnum(): Confirms if it is alphabet or numeric
   * s.isspace(): confirms if it is a space
   * s.isascii(), s.isdecimal(), s.isupper(), s.islower() are few other built in functions in Python
+  * k=s.split("/") : Uses "/" as a delimiter and splits the string s into an list
 
 ## Linked Lists
 * Different types: Singly Linked Lists, Doubly Linked Lists, Circular Linked Lists etc.
@@ -27,8 +28,37 @@
 
 
 ## Stacks
-* To convert a list to string: use join() function. <br>
+* To convert a list to string: use join() function. \
 >Eg: stack = ['l','e','e','t'] \
      q = "".join(stack) \
 This joins all the elements of stack into single string with "" (no space) delimiter. \
 Hence output would be - leet.  
+
+* stack elements can be accessed similar to arrays[List]. \
+Eg: if you want to access the top element of stack: stack[-1] can be used.
+
+* **Infix, Prefix & Postfix Expressions:** An expression contains cariables, operators,brackets and values.\
+Rules: 
+Binary operator: requires 2 operands.
+> Eg: A+B
+
+**Associativity**
+   1. (), [], {}  : Brackets are given highest priority to be calculated 
+   2. ^ : (Right to Left)
+   3.  *, / : (Left to right)
+   4. +, - :(Left to right)
+
+* Infix:  <operand><operator><operand>
+> A+B
+* Prefix:(Polish Notation)   <operator><operand><operand>
+> +AB
+* Postfix:(Reverse Polish Notation)  <operand><operand><operator>
+> AB+
+
+**Processing of postfix & prefix is better since it takes less memory and time to calculate.** 
+
+Interesting LC to solve:
+>- LC143 : Interesting way of manipulating linked lists \
+1>2>3>4>5 ===> 1>5>2>4>3
+>- LC71 : Tricky String Manipulation for file path \
+   "/.../a/../b/c/../d/./"  ===>  "/.../b/d"
