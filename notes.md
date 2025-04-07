@@ -1,5 +1,8 @@
 # LeetCode prep notes
 
+## **Abstract Data Types:** 
+
+
 ## Arrays[List]
 * to compare max of 2 numbers: a = max(1,10) {Built-in function in Python}
 
@@ -27,7 +30,7 @@
 
 
 
-## Stacks
+## Stacks (LIFO)
 * To convert a list to string: use join() function. \
 >Eg: stack = ['l','e','e','t'] \
      q = "".join(stack) \
@@ -36,6 +39,8 @@ Hence output would be - leet.
 
 * stack elements can be accessed similar to arrays[List]. \
 Eg: if you want to access the top element of stack: stack[-1] can be used.
+
+* Applications: Tennis ball stored into a cylinder; bullets in a gun ; Expression Evaluation 
 
 * **Infix, Prefix & Postfix Expressions:** An expression contains cariables, operators,brackets and values.\
 Rules: 
@@ -62,3 +67,16 @@ Interesting LC to solve:
 1>2>3>4>5 ===> 1>5>2>4>3
 >- LC71 : Tricky String Manipulation for file path \
    "/.../a/../b/c/../d/./"  ===>  "/.../b/d"
+
+## Queues (FIFO)
+{Linear, Abstract Data Type Data structure}\
+Follows: FIFO; has array, circular array and linkedlist implementation. \
+For linear array: the limitation is rear doesnt get updated properly; hence circular array. \
+{ (i+1)%N } --> Inserts in the reminder of this. \
+Functions involved: enqueue, dequeue, peek. \
+3 types of Queues:
+- Queue
+- DEQ ( Double Ended Queue): Can enqueue and dequeue from both sides. 
+- Priority Queue
+
+Applications of DEQ: Multi Porcessors ; Redo & Undo in systems
