@@ -11,6 +11,12 @@
   * Small-case Alphabets: 97 to 122
   * Capital-cas Alphabets: 65 to 90 
 * To convert a character to its ASCII value: built in python function - ord()
+
+* Strings are immutable, i.e, cannot be edited/changed. \
+  * To make it mutable, we have to convert it into a List and then make changes and join it.
+    (Eg- LC:345)
+
+
 * String Operations:
   * s.isdigit(): Confirms if it is a digit or not
   * s.isalpha(): Confirms if it is an alphabet
@@ -18,6 +24,12 @@
   * s.isspace(): confirms if it is a space
   * s.isascii(), s.isdecimal(), s.isupper(), s.islower() are few other built in functions in Python
   * k=s.split("/") : Uses "/" as a delimiter and splits the string s into an list
+  * s.replace("/",":")--> replaces all "/" with ":"
+
+
+  * l=re.sub(r'[^a-zA-Z0-9]', '', text) : this regular expression method is used to add only alphanumeric chars and no special characters
+  * The same can be done using isalnum() function as well through iteration
+
 
 ## Linked Lists
 * Different types: Singly Linked Lists, Doubly Linked Lists, Circular Linked Lists etc.
@@ -62,12 +74,6 @@ Binary operator: requires 2 operands.
 
 **Processing of postfix & prefix is better since it takes less memory and time to calculate.** 
 
-Interesting LC to solve:
->- LC143 : Interesting way of manipulating linked lists \
-1>2>3>4>5 ===> 1>5>2>4>3
->- LC71 : Tricky String Manipulation for file path \
-   "/.../a/../b/c/../d/./"  ===>  "/.../b/d"
-
 ## Queues (FIFO)
 {Linear, Abstract Data Type Data structure}\
 Follows: FIFO; has array, circular array and linkedlist implementation. \
@@ -78,5 +84,17 @@ Functions involved: enqueue, dequeue, peek. \
 - Queue
 - DEQ ( Double Ended Queue): Can enqueue and dequeue from both sides. 
 - Priority Queue
-
+s
 Applications of DEQ: Multi Porcessors ; Redo & Undo in systems
+
+Interesting LC to solve:
+>- LC143 : Interesting way of manipulating linked lists \
+   1>2>3>4>5 ===> 1>5>2>4>3
+>- LC71 : Tricky String Manipulation for file path \
+   "/.../a/../b/c/../d/./"  ===>  "/.../b/d"
+>- LC1700 : Interesting simulation of matching students wanting circle and square food with sandiches. 
+>- LC345: Interesting manipulation of strings ; while intution was right, logic written was a bit different.\
+Note: If x==y doesn't work, translate the logic into what must be done if x!=y. 
+
+## Patterns of solving DSA:
+1. Two-Pointers : (One fast, one slow)
