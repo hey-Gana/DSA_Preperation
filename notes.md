@@ -1,10 +1,25 @@
 # LeetCode prep notes
 
-## **Abstract Data Types:** 
+## Basics
+* 2 types- iterative ; recursive
 
+### Arithmetic Operators:
+- '**': Exponentiation
+- '//': Floor Division
+  - **Note:** Difference between '/' [Normal division - returns float value] and '//' [Floor Division- returns integer value]
+
+
+## **Abstract Linear Data Types:** 
 
 ## Arrays[List]
 * to compare max of 2 numbers: a = max(1,10) {Built-in function in Python}
+* abs(x) - function in python that gives absolute of the number x
+* Typecasting: q=['1','0','0']. Here all elements of q are strings. To access them as integers, typecast - int(q[0]) \
+  Vice-versa: q=[1,0,0]. To stringify it - str(q[0])
+* To declare a 2-d array, declare a 1d and append each row.\
+  Eg: do- a=[] and add each row to it(row=[1,2,3]) instead of declaring it as a[][] (invalid syntax) or a[[]] (creates only one empty list of 1D)
+* Pre assign same value for each row: row=[1]*(j) ==> say j=3, equivalent of saying  create 3 copies of [1]. 
+
 
 ## String
 * ASCII Values for:
@@ -87,14 +102,65 @@ Functions involved: enqueue, dequeue, peek. \
 s
 Applications of DEQ: Multi Porcessors ; Redo & Undo in systems
 
-Interesting LC to solve:
->- LC143 : Interesting way of manipulating linked lists \
+
+## **Abstract Non-Linear Data Types:**
+
+
+
+# Interesting LC to solve:
+>- **LC143** : <br>
+   Interesting way of manipulating linked lists \
    1>2>3>4>5 ===> 1>5>2>4>3
->- LC71 : Tricky String Manipulation for file path \
+>- **LC71** :<br>
+   Tricky String Manipulation for file path \
    "/.../a/../b/c/../d/./"  ===>  "/.../b/d"
->- LC1700 : Interesting simulation of matching students wanting circle and square food with sandiches. 
->- LC345: Interesting manipulation of strings ; while intution was right, logic written was a bit different.\
-Note: If x==y doesn't work, translate the logic into what must be done if x!=y. 
+   Note: use built in functions for string manipulation: x.split("/"), x.join(""), x.replace("(","/")
+>- **LC1700** : <br>
+   Interesting simulation of matching students wanting circle and square food with sandwiches. 
+>- **LC345**: <br>
+   Interesting manipulation of strings ; while intuition was right, logic written was a bit different.\
+   Note: If x==y doesn't work, translate the logic into what must be done if x!=y. 
+>- **LC541** : <br>
+   Very interesting way of string manipulation. \ 
+   Every element in first k positions should be reversed in every 2k steps.\
+   Intuition was partially correct but was not implemented in the code. Edge cases were missed.\
+   Can use **reversed** function for a subset of string(List of sub-string as well) \ 
+   Eg: s="abcdefg" k=2 ; expected output: "**ba**cd**fe**g" notice the first k characters are interchanged in every 2k steps.
+>- **LC67**: <br>
+   Although I solved it, it wasn't the efficient solution. 
+   Eg; a=["111"], b=["111"]. output>> ["1000"]
+>- **LC2563**: <br>
+   Intuition was partially correct. Interesting way of calculating sum within range. Tried too hard to do everything in one loop.\
+   If unable to solve everything in one loop, try to break it into 2 loops. 
+   eg: Counting sum which is [>=lower] and [<=upper] can be broken down to 2 loops -> count of everything [<=upper]-count of everything[<lower].\
+   Time complexity calculations: O(n)+O(n) = O(n)
+>- **LC38**: <br>
+   Took some time to understand the question. The iteration, though simple, was hard to understand. Had to simulate it few times.
+>- **LC70**: <br>
+   Interesting simulation. Easy but I complicated it by myself.\
+   If intuition is not working, simulate more and compare results with previous results to find a trend.
+
 
 ## Patterns of solving DSA:
-1. Two-Pointers : (One fast, one slow)
+1. Two-Pointers : there are 2 pointers running in the same loop instead of having 2 different pointers. 
+Notes: Sorting an array will help efficiently solve 2 pointer problems
+> Types:
+> * (One fast, one slow eg: LC141) ;
+> * (different start positions eg: LC541) ; 
+> * (Sorting of array is efficient use of 2 pointers eg: LC2563)
+
+2. Sliding Window: 
+
+
+3. Fibbonachi Series: 
+
+
+4. Bit Manipulation: Using gates - And, Or, Nand, Nor, Xor 
+
+
+## Methodology of solving:
+- Understanding of the question
+- Intuition construction
+- Writing logic
+- Testing with generic edge case scenarios
+- Analysis of Complexity 
