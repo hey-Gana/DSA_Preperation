@@ -25,8 +25,8 @@
 * ASCII Values for:
   * Small-case Alphabets: 97 to 122
   * Capital-cas Alphabets: 65 to 90 
-* To convert a character to its ASCII value: built in python function - ord()
-
+* To convert a character to its ASCII value: built in python function -> ord()
+* To convert an integer into character -> chr(i)
 * Strings are immutable, i.e, cannot be edited/changed. \
   * To make it mutable, we have to convert it into a List and then make changes and join it.
     (Eg- LC:345)
