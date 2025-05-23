@@ -164,3 +164,14 @@ Notes: Sorting an array will help efficiently solve 2 pointer problems
 - Writing logic
 - Testing with generic edge case scenarios
 - Analysis of Complexity 
+
+
+## Links
+- https://www.w3schools.com/dsa/ : DSA Preperation
+- https://systemdesignschool.io/primer#introduction : System Design Preperation
+
+
+## NeetCode Notes
+- In python, when using built in array sorting: nums.sort() -> time complexity is O(nlogn); \
+space complexity is dependant on the sorting algorithm used [can be O(1) or O(n)].
+- 
