@@ -139,7 +139,9 @@ Applications of DEQ: Multi Porcessors ; Redo & Undo in systems
 >- **LC70**: <br>
    Interesting simulation. Easy but I complicated it by myself.\
    If intuition is not working, simulate more and compare results with previous results to find a trend.
-
+>- **LC135**: <br>
+   Intuition was partially correct. Interesting way of breaking down the problem into 2 sub problems with same method of calculation.\
+   An easy problem if broken down that way.
 
 ## Patterns of solving DSA:
 1. Two-Pointers : there are 2 pointers running in the same loop instead of having 2 different pointers. 
